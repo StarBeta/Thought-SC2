@@ -13,7 +13,11 @@ Our method has the following characteristics:
 * **Scalable**: Our approach can be easily extended to other races and maps and achieved good performance in these settings; 
 * **Simple**: There is no need to design manual rewards in our method, nor does it require complex architectures.
 
+**Terran agent at start**
 ![Terran Agent](figures/Terran_1.jpg)
+
+**Terran agent at winning time**
+![Terran Agent](figures/Terran_2.jpg)
 
 ## What is the Mind-game model?
 
@@ -98,7 +102,7 @@ Run eval_mini_srcgame.py to train an agent (P vs. T) in StarCraft II. See eval_m
 
 **Run testing**
 ```
-python eval_mini_srcgame.py
+python eval_mini_srcgame.py --on_server=False 
 ```
 
 **Important Parameters**
@@ -117,7 +121,7 @@ python eval_mini_srcgame.py
 
 **Run training (transferring from mind-game)**
 ```
-python eval_mini_srcgame.py --restore_model_path="./model/20190121-212908_mini/" --on_server=True --step_mul=8 --max_iters=100
+python eval_mini_srcgame.py --restore_model_path="./model/20190121-212908_mini/" --on_server=True --step_mul=8
 ```
 
 ### Benchmark
