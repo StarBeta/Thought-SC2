@@ -39,7 +39,8 @@ python train_by_dummy.py
 
 **ACRL**
 <div align="center">
-<img src="https://github.com/mindgameSC2/mind-SC2/blob/master/figures/ACRL.png"><br><br>
+<img src="https://github.com/mindgameSC2/mind-SC2/blob/master/figures/ACRL.png"/>
+<img src="https://github.com/mindgameSC2/mind-SC2/blob/master/figures/ACRLfromScratch.png"/>
 </div>
 
 ## What is the Mind-game model
