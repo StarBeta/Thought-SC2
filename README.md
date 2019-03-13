@@ -89,19 +89,22 @@ python train_by_dummy.py
 - matplotlib==2.1
 - scipy==1.0
 
-**Notes**
+**Notes:**
+
 If you install pysc2==1.2 and find this error "futures requires Python '>=2.6, <3' but the running Python is 3.5.6", then try first install futures as follow
 ```
 pip install futures==3.1.1
 ```
 then install pysc2==1.2, and this problem is solved.
 
-**Notes**
+**Notes:**
+
 You can also install all requirements by one command:
 ```
 pip install -r requirements.txt
 ```
-**Notes**
+**Notes:**
+
 If you find this warning "[features.py:361] Unknown ability 3757 seen as available." too many, you can go to the pysc2 folder and find the code of features.py and comment the line 361 code.
 
 ### Usage
@@ -147,7 +150,7 @@ python eval_mini_srcgame.py --restore_model_path="./model/20190121-212908_mini/"
 |--------|:---------:|:------:|:------:|:------:|
 | 1 Server |Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz| 48 | GTX 1080Ti | 4 |
 
-**Notes**
+**Notes:**
 
 When training on server, we use a distributed training setting which is that we set the running process to 10 and threads in each process to 5. By using this distributed setting, we can run multi SC2 instances at the same time to speed up training.
 
@@ -157,7 +160,7 @@ When training on server, we use a distributed training setting which is that we 
 |--------|:---------:|:------:|:------:|:------:|:------:|
 | Ours   | 20min15sec  | 21min50sec  | 23min17sec  | 65min  | 1.08 |
 
-**Notes**
+**Notes:**
 
 Step_1 refer to training time in difficulty level-1 of mind-game. Step_2 refer to training time in difficulty level-2 to level-7 of mind-game. Step_3 refer to training time in difficulty level-7 in original SC2 environment.
 
