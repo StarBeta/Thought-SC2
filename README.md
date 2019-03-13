@@ -147,12 +147,16 @@ python eval_mini_srcgame.py --restore_model_path="./model/20190121-212908_mini/"
 |--------|:---------:|:------:|:------:|:------:|
 | 1 Server |Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz| 48 | GTX 1080Ti | 4 |
 
+**Notes**
+When training on server, we use a distributed training setting which is that we set the running process to 10 and threads in each process to 5. By using this distributed setting, we can run multi SC2 instances at the same time to speed up training.
+
 ## Time
-| Method | Step_1 | Step_2 | Step_3 | Overall Time | (in hours) |
+| Method | Step_1 | Step_2 | Step_3 | Overall Traning Time | Traning Time in Hours |
 |--------|:---------:|:------:|:------:|:------:|:------:|
 | Ours   | 20m15s  | 21m50s  | 23m17s  | 65m  | 1.08 |
 
-For ours, Step_1 refer to training time in difficulty level-1 of mind-game. Step_2 refer to training time in difficulty level-2 to level-7 of mind-game. Step_3 refer to training time in difficulty level-7 in original SC2 environment.
+**Notes**
+Step_1 refer to training time in difficulty level-1 of mind-game. Step_2 refer to training time in difficulty level-2 to level-7 of mind-game. Step_3 refer to training time in difficulty level-7 in original SC2 environment.
 
 ## LICENSE
 MIT LICENSE
