@@ -141,21 +141,24 @@ python eval_mini_srcgame.py --restore_model_path="./model/20190121-212908_mini/"
 
 ### Time Benchmark
 
-## Environment
+**Environment**
 
 | Server | CPU | Num of CPU cores | GPU | Num of GPUs |
 |--------|:---------:|:------:|:------:|:------:|
 | 1 Server |Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz| 48 | GTX 1080Ti | 4 |
 
 **Notes**
+
 When training on server, we use a distributed training setting which is that we set the running process to 10 and threads in each process to 5. By using this distributed setting, we can run multi SC2 instances at the same time to speed up training.
 
-## Time Cost
+**Time Cost**
+
 | Method | Time in Step_1 | Time in Step_2 | Time in Step_3 | Overall Traning Time | Traning Time (in hours) |
 |--------|:---------:|:------:|:------:|:------:|:------:|
 | Ours   | 20min15sec  | 21min50sec  | 23min17sec  | 65min  | 1.08 |
 
 **Notes**
+
 Step_1 refer to training time in difficulty level-1 of mind-game. Step_2 refer to training time in difficulty level-2 to level-7 of mind-game. Step_3 refer to training time in difficulty level-7 in original SC2 environment.
 
 ## LICENSE
