@@ -21,7 +21,7 @@ from mini_agent import ProtossAction
 class MiniSourceAgent(base_agent.BaseAgent):
     """Agent for source game of starcraft."""
 
-    def __init__(self, index=0, rl_training=False, restore_model=False, global_buffer=None, net=None, strategy_agent=None):
+    def __init__(self, index=0, rl_training=False, restore_model=False, global_buffer=None, net=None, strategy_agent=None, greedy_action=False):
         super(MiniSourceAgent, self).__init__()
         self.net = net
         self.index = index
@@ -52,7 +52,7 @@ class MiniSourceAgent(base_agent.BaseAgent):
         self._gases = None
         self.is_end = False
 
-        self.greedy_action = True
+        self.greedy_action = greedy_action
         self.rl_training = rl_training
 
     def reset(self):
