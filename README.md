@@ -180,7 +180,9 @@ Please cite our paper if you find this repository useful.
 
 ## FAQ
 
-Of course, you may have some questions about our project. We put the most frequently asked questions into the [FAQ](docs/FAQ.md).
+Of course, you may have some questions about our project. 
+
+We put the most frequently asked questions into the [FAQ](docs/FAQ.md).
 
 If you don't find the question you want in the FAQ, you can open a new issue to ask that.
 
