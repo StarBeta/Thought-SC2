@@ -4,7 +4,8 @@
 
 We have added the codes for training or testing an agent (P vs. T) in SC2. Now you can train an agent beating the most difficult (level-7) bot of SC2 in only one to two hours (on a common sever). Enjoy it! 
 
-If you find any questions, please start an issue.
+If you find any questions, please start an issue. Before asking questions, you can take a look at the [FAQ](docs/FAQ.md)
+ first.
 
 ## Introduction
 
@@ -179,7 +180,11 @@ Please cite our paper if you find this repository useful.
 
 ## FAQ
 
+Of course, you may have some questions about our project. We put the most frequently asked questions into the FAQ.
+
 Please refer to [here](docs/FAQ.md)
+
+If you don't find the question you want in the FAQ, you can open an issue to ask questions.
 
 
 
