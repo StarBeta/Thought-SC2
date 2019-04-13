@@ -17,3 +17,11 @@ As we said before, the information provided by the original pysc2 interface is a
 **5. Currently, the agent only uses a part of the units and buildings. Is that right?**
 
 Yes. In the current version, we only use some of the early buildings and units (of course, the current code can be easily extended to all units and buildings). For this reason, we call this setup a 'full-length' StarCraft II instead of a 'complete' StarCraft II. Our current code can be easily extended to all units and buildings in a very straightforward way. In a future version, we will try to build an agent using all the units and buildings for complete StarCraft II.
+
+**6. Have you tried to learn this mind-game model before?**
+
+Previous model-based reinforcement learning generally used supervised learning to learn the dynamic model of the environment. But mind-game is not the original environment, so it can't be learned through the data that interacts with the original environment. There are generally three ways to obtain a model. The first is a learning-based approach, and the second is an implementation-based approach (based on domain knowledge). Through prototype experiments, we found that due to the complexity of the StarCraft II environment, the learning-based approach is not effective, which may be the reason for the cumulative error of the model. Models that use domain knowledge have less error, but the cost of implementing full StarCraft II is high. This work uses the third method, which is to implement a mind-game model to learn by mapping, so as to achieve a balance between performance and efficiency. At the same time, the main purpose of this paper is to explore an efficient reinforcement learning algorithm, rather than focusing on the way the model is obtained. Therefore, more automated model acquisition methods can be put into future work.
+
+**7. Can you summarize this work in one or two sentences?**
+
+We propose an interesting idea and achieve excellent results which outperform previous state-of-the-art results (published). And we hope this work may open up the new way towards model-based reinforcement learning on StarCraft II.

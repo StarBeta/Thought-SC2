@@ -2,6 +2,8 @@
 
 ## Update
 
+We are cleaning up the code for the Terran vs. Terran (T vs. T) and Zerg vs. Zerg (Z vs. Z) in the mind-game. Since these two parts of the code are written by two other authors, it takes a certain amount of cleanup time and will be released when everything is fine.
+
 We have added the codes for training or testing an agent (P vs. T) in SC2. Now you can train an agent beating the most difficult (level-7) bot of SC2 in only one to two hours (on a common sever). Enjoy it! 
 
 If you find any questions, please start an issue. Before asking questions, you can take a look at the [FAQ](docs/FAQ.md)
