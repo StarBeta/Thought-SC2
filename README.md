@@ -2,12 +2,14 @@
 
 ## Update
 
-We are cleaning up the code for the Terran vs. Terran (T vs. T) and Zerg vs. Zerg (Z vs. Z) in the mind-game. Since these two parts of the code are written by two other authors, it takes a certain amount of cleanup time and will be released when everything is fine.
+We add a [technical-report](docs/technical-report.pdf) for introducing our previous attempts to use model-based RL on SC2. We also add a [appendix](docs/appendix.pdf) for describing the design of the mind-sc2, training architecture, state space, etc.
 
 We have added the codes for training or testing an agent (P vs. T) in SC2. Now you can train an agent beating the most difficult (level-7) bot of SC2 in only one to two hours (on a common sever). Enjoy it! 
 
 If you find any questions, please start an issue. Before asking questions, you can take a look at the [FAQ](docs/FAQ.md)
  first.
+
+We are cleaning up the code for the Terran vs. Terran (T vs. T) and Zerg vs. Zerg (Z vs. Z) in the mind-game. Since these two parts of the code are written by two other authors, it takes a certain amount of cleanup time and will be released when everything is fine.
 
 ## Introduction
 
@@ -43,6 +45,11 @@ mind-SC2/
           |->mini_agent.py                * transition part for protoss
           |->strategy_env.py              * battlefield part
 ```
+
+Our mind-game is divided into two parts, one is the information of units and buildings extracted from SC2, and the other is the rule. The former can be automatically generated. For example, we can download from [wiki](https://liquipedia.net/starcraft2/units) and turn it into python classes. The latter needs to be implemented manually. The design of mind-game can be seen below: 
+
+**Design of Mind-SC2**
+![Mind-SC2](figures/Mind-SC2.jpg)
 
 ## How to train an agent (P vs. T) in mind-game?
 
@@ -166,6 +173,12 @@ When training on server, we use a distributed training setting which is that we 
 **Notes:**
 
 Step_1 refer to training time in difficulty level-1 of mind-game. Step_2 refer to training time in difficulty level-2 to level-7 of mind-game. Step_3 refer to training time in difficulty level-7 in original SC2 environment.
+
+## Docs
+| Doc | Explanation
+|------|----------
+| [technical-report](docs/technical-report.pdf) |  introducing our previous attempts to use model-based RL on SC2
+| [appendix](docs/appendix.pdf) | describing the design of the mind-sc2, training architecture, state space, etc
 
 ## LICENSE
 MIT LICENSE
