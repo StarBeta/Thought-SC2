@@ -34,13 +34,8 @@ class BattleField():
         return all_hp
 
     def battle(self, verbose=False):
-
         red_army = self.red_agent.military_force()
         blue_army = self.blue_agent.military_force()
-
-        if verbose:
-            print('red_army:', red_army)
-            print('blue_army:', blue_army)
 
         red_attack, red_damage = self.get_damage(red_army)
         blue_attack, blue_damage = self.get_damage(blue_army)
@@ -48,12 +43,10 @@ class BattleField():
         red_all_hp = self.get_equivalent_hp(red_army, blue_attack)
         blue_all_hp = self.get_equivalent_hp(blue_army, red_attack)
 
-        #red_remain_hp = min(red_all_hp - blue_damage + red_armor, red_all_hp)
         red_remain_hp = red_all_hp - blue_damage
         if verbose:
             print(red_remain_hp)
 
-        #blue_remain_hp = min(blue_all_hp - red_damage + blue_armor, blue_all_hp)
         blue_remain_hp = blue_all_hp - red_damage
         if verbose:
             print(blue_remain_hp)
@@ -73,10 +66,6 @@ class BattleField():
 
         red_army = self.red_agent.military_force()
         blue_army = self.blue_agent.military_force()
-
-        if verbose:
-            print('red_army:', red_army)
-            print('blue_army:', blue_army)
 
 
 class SimulatePlatform():
@@ -109,24 +98,14 @@ class SimulatePlatform():
         self.blue_agent.init(self, player_id=1, pos=self.blue_pos)
 
     def simulate(self, verbose=False):
-        # print(self.army[0].pos)
-        # print(self.army[1].pos)
-
         for i in range(self.max_steps):
             self.red_agent.step_auto(verbose)
             self.blue_agent.step_auto(False)
 
             if verbose:
-                print('Red army:', self.red_agent.military_force())
-                print('Red order:', self.army[self.red_agent.player_id])
-                print('Blue army:', self.blue_agent.military_force())
-                print('Blue order:', self.army[self.blue_agent.player_id])
                 time.sleep(1)
 
             if self.is_end == True:
-                if verbose:
-                    print('step:', i, ' game ends.')
-                    print('winner is:', self.win_index)
                 break
 
             self.battle_execute()
@@ -145,8 +124,6 @@ class SimulatePlatform():
         army_0 = self.army[0]
         army_1 = self.army[1]
         combat_max_steps = 1
-        #print('army_0.pos', army_0.pos)
-        #print('army_1.pos', army_1.pos)
 
         if army_0.pos == army_1.pos:
             bf = BattleField(red_agent=self.red_agent, blue_agent=self.blue_agent, field=army_0.pos)
