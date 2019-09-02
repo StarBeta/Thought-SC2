@@ -20,7 +20,7 @@ Here are two screenshots of our agent (Terran) in the game which can be seen bel
 **Terran agent at winning time**
 ![Terran Agent 2](figures/Terran_2.jpg)
 
-## What is the Mind-game model?
+## What is the Thought-game model?
 
 This is a mixed model which combines the accurate part of information of SC2 units and buildings and inaccurate part which contains a turn-based simulated battle system partially inspired by the game of 'Heroes of Might and Magic III'. 
 
@@ -41,7 +41,7 @@ mind-SC2/
 Our thought-game is divided into two parts, one is the information of units and buildings extracted from SC2, and the other is the rule. The former can be automatically generated. For example, we can download from [wiki](https://liquipedia.net/starcraft2/units) and turn it into python classes. The latter needs to be implemented manually. The design of thought-game can be seen below: 
 
 **Design of Thought-SC2**
-![Mind-SC2](figures/Mind-SC2.jpg)
+![Thought-SC2](figures/Design.png)
 
 ## How to train an agent (P vs. T) in thought-game?
 
