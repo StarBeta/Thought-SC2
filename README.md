@@ -1,19 +1,11 @@
 # Thought-SC2
 
 ## Update
-
-We add a [technical-report](docs/technical-report.pdf) for introducing our previous attempts to use model-based RL on SC2. We also add a [appendix](docs/appendix.pdf) for describing the design of the Thought-sc2, training architecture, state space, etc.
-
-We have added the codes for training or testing an agent (P vs. T) in SC2. Now you can train an agent beating the most difficult (level-7) bot of SC2 in only one to two hours (on a common sever). Enjoy it! 
-
-If you find any questions, please start an issue. Before asking questions, you can take a look at the [FAQ](docs/FAQ.md)
- first.
-
-We are cleaning up the code for the Terran vs. Terran (T vs. T) and Zerg vs. Zerg (Z vs. Z) in the thought-game. Since these two parts of the code are written by two other authors, it takes a certain amount of cleanup time and will be released when everything is fine.
+We have changed the name from "Mind-Game" to "Thought-Game" to prevent confusion.
 
 ## Introduction
 
-This is the code corresponding to the paper "Efficient Reinforcement Learning with a Mind-Game for Full-Length StarCraft II". 
+This is the code corresponding to the paper "Efficient Reinforcement Learning with a Thought-Game for StarCraft". 
 
 Our method has the following characteristics: 
 * **Efficient**: It takes only a few hours to train an agent that defeats built-in elite difficulty (difficulty 7) bot; 
@@ -187,11 +179,11 @@ MIT LICENSE
 Please cite our paper if you find this repository useful.
 
 ## TODO
-- [x] Mind-game model
-- [x] P vs. T in mind-game by ARCL
+- [x] Thought-game model
+- [x] P vs. T in thought-game by ARCL
 - [x] P vs. T in SC2 (Simple64, difficulty 7) by transfer learning
-- [ ] Z vs. Z in mind-game by ARCL
-- [ ] T vs. T in mind-game by ARCL
+- [ ] Z vs. Z in thought-game by ARCL
+- [ ] T vs. T in thought-game by ARCL
 
 ## FAQ
 
