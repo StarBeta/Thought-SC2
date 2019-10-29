@@ -25,5 +25,5 @@ six==1.12.0
 tensorflow==1.5.0
 tensorflow-tensorboard==1.5.1
 websocket-client==0.55.0
-Werkzeug==0.14.1
+Werkzeug==0.15.3
 wincertstore==0.2
