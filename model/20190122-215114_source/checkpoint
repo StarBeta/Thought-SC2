@@ -1,0 +1,2 @@
+model_checkpoint_path: "mini"
+all_model_checkpoint_paths: "mini"
